@@ -27,10 +27,10 @@ public class BankAccount {
      * @param customer from the Coustomer.java user defined type
      * @param balance it shows the balance of the bank account
      */
-    BankAccount (String AccountType , Customer customer, double balance){
+    BankAccount (String AccountType , Customer customer){
         this.AccountType = AccountType;
         this.customer = customer;
-        this.balance = balance;
+        
     }
 
     // Methods 
@@ -76,7 +76,7 @@ public class BankAccount {
     }  
     
     public double getInterestPayment(double amount ,double rate_of_interest ,int time_in_years){
-        double interest = (amount * rate_of_interest * time_in_years);
+        double interest = (amount * rate_of_interest * time_in_years)/100;
         return interest;
     }
 }
