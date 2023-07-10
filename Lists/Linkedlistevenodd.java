@@ -1,6 +1,5 @@
 import java.util.*;
 
-import javax.imageio.stream.MemoryCacheImageInputStream;
 public class Linkedlistevenodd {
     public static void main(String[] args){
         LinkedList<Integer> myIntegers = new LinkedList<>();
@@ -22,7 +21,7 @@ public class Linkedlistevenodd {
         while(iterator.hasNext()){
             System.out.print(iterator.next() + " ");
         }
-        
+
         System.out.println();
         
         System.out.println("The Team A is");
